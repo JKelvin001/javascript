@@ -1,0 +1,23 @@
+@charset 'UTF-8';
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html{
+    font: normal normal 1em 'Arial';
+    background-color: rgb(43, 43, 43);
+}
+main{
+ background-color: white;
+ width: 50vw;
+ height: 50vh;
+ border-radius: 20px;
+ margin: auto;
+}
+main > h1{
+    text-align: center;
+    padding: 20px;
+}
+main > p{
+    padding: 20px;
+}
