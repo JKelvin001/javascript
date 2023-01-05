@@ -12,8 +12,8 @@
         <h1>Sistemas de Multas</h1>
         <div id="inicio">
             Velocidade do carro: <input type="number" name="txtv" id="txtv"> Km/H
+            <input type="button" value="Verificar" onclick="calcular()">
         </div>
-        <input type="button" value="Verificar" onclick="calcular()">
         <div id="resultado">
         </div>
     </main>
@@ -26,7 +26,7 @@
             if (vel > 80) {
                 res.innerHTML += `<p>Você está <strong>MULTADO</strong> por excesso de velocidade!</p>`
             }
-            res.innerHTML +=`<p>Dirija sempre com cuidado e com o cinto de segurança</p>`
+            res.innerHTML +=`<p>Dirija sempre com cuidado e com o <strong>cinto de segurança</strong></p>`
         }
     </script>
 </body>
