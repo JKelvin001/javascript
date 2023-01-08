@@ -4,6 +4,7 @@
     margin: 0;
 }
 html, body{
+    background-color: rgb(40, 40, 245);
 }
 header h1{
     text-align: center;
@@ -20,19 +21,37 @@ section{
 
     background-color: white;
     width: 40vw;
-    height: 60vh;
+    height: 50vh;
     border-radius: 14px;
 }
-#msg{
+#quest{
     text-align: center;
-    padding: 60px;
+    padding: 20px;
 }
-#photo img{
-    position: absolute;
-    width: 250px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+#quest p{
+    padding-bottom: 30px;
+    font: normal normal 1.2em 'Arial';
+}
+input[type="number"]{
+    width: 80px;
+    border-radius: 10px;
+    padding: 5px;
+}
+input[type="button"]{
+    width: 270px;
+    border-radius: 10px;
+    padding: 5px;
+}
+input[type="button"]:hover{
+    background-color: rgb(40, 40, 245);
+    color: white;
+}
+#res p{
+    text-align: center;
+    font-size: 1.2em;
+}
+img{
+    width: 200px;
 }
 /*----------------------*/
 footer h2, a{

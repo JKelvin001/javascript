@@ -10,7 +10,7 @@ function carregar() {
 
     if (hora >= 0 && hora <12) {
     img.src = 'manhajs.png'
-    document.body.style.background = 'E6C853'
+    document.body.style.background = '#E6C853'
     } else if (hora >= 12 && hora <= 17){
     img.src = 'tardejs.png'
     document.body.style.background = '#E0531F'
