@@ -7,14 +7,24 @@ function contar() {
     if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
         window.alert('[ERROR] Dados incompletos')
     } else {
+        res.style.padding = '20px'
         res.innerHTML = 'Contando.. '
         let i = Number(ini.value)
         let f = Number(fim.value)
         let p = Number(passo.value)
-
-        for(let c = i; c <= f; c += p) {
-            res.style.padding = '20px'
-            res.innerHTML +=  `${c} \u{1F603}`
+        if (p <= 0) {
+            window.alert('Passo Invalido! Passo automático: 1')
+            p = 1
         }
+        if (i < f) {
+            for(let c = i; c <= f; c += p) {
+            res.innerHTML +=  `${c} \u{1F449}`
+            }
+        }else {
+            for(let c = i; c >= f; c -= p){
+            res.innerHTML += `${c} \u{1F449}`
+            }
+        }
+        res.innerHTML += `\u{1F3C1}`
     }
 }    
