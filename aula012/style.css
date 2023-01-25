@@ -1,0 +1,44 @@
+@charset 'UTF-8';
+*{
+    padding: 0;
+    margin: 0;
+}
+html, body{
+    background-color: rgb(40, 40, 245);
+}
+header h1{
+    text-align: center;
+    color: white;
+    margin-top: 140px;
+    margin-bottom: 600px;
+}
+/*----------------------------------*/
+section{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    width: 40vw;
+    height: 50vh;
+    border-radius: 14px;
+    padding: 20px;
+}
+section > div > p{
+    padding: 20px;
+}
+select{
+    width: 385px;
+    margin: 20px;
+    border-radius: 5px;
+}
+/*----------------------*/
+footer h2, a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
