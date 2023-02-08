@@ -1,0 +1,46 @@
+@charset 'UTF-8';
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+html, body{
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+}
+main{
+    width: 100vw;
+}
+#app{
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;  
+}
+#app p{
+    margin-top: 20px;
+    font: normal bold 2.5em 'Arial';
+    color: white;
+}
+.logo, .logo2, .logo3{
+    height: 10em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 500ms;
+}
+.logo:hover{
+    filter: drop-shadow(0 0 2em rgb(245, 110, 0));
+}
+.logo2:hover{
+    filter: drop-shadow(0 0 2em rgb(0, 68, 255));
+}
+.logo3:hover{
+    filter: drop-shadow(0 0 2em rgb(251, 255, 0));
+}
