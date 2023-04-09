@@ -9,19 +9,17 @@ html, body{
 header h1{
     text-align: center;
     color: white;
-    margin-top: 140px;
-    margin-bottom: 600px;
+    margin: 20px;
 }
 /*----------------------------------*/
+.section{
+    display: flex;
+    justify-content: center;
+}
 section{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
     background-color: white;
     width: 40vw;
-    height: 50vh;
+    height: max-content;
     border-radius: 14px;
     padding: 20px;
 }
@@ -33,11 +31,16 @@ select{
     margin: 20px;
     border-radius: 5px;
 }
+#res{
+    font: normal normal 1.2em 'Arial';
+    color: black;
+}
 /*----------------------*/
 footer h2, a{
     text-align: center;
     color: white;
     text-decoration: none;
+    margin: 20px;
 }
 a:hover{
     text-decoration: underline;
